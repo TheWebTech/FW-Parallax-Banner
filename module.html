@@ -11,7 +11,7 @@
   {%- set pos_class = module.custom_positioning_class -%}
 {%- endif -%}
 <div class="parallax-module-wrapper" data-content-position="{{position_content}}">
-  <div class="parallax-module" style="background-image: url({{ module.background.src }}); background-position: 50% 100%; " data-bottom-top="background-position: 50% 0%;" data-center="background-position: 50% 0%;" data-top-bottom="background-position: 50% 100%;"
+  <div class="parallax-module" style="background-image: url({{ module.background.src }}); background-position: 50% 100%; " data-bottom-top="background-position: 50% 0%;"  data-top-bottom="background-position: 50% 100%;"
     >{#if you wish to style the content container style .parallax-module__content or add own class#}
     <div class="parallax-module__content {{pos_class}}">
      
