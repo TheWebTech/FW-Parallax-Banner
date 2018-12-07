@@ -1,1 +1,25 @@
-/* CSS code goes here */
+
+.parallax-module-wrapper .parallax-module {
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.parallax-module-wrapper .parallax-module__content.v-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.parallax-module-wrapper .parallax-module__content.h-center {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.parallax-module-wrapper .parallax-module__content.v-center.h-center {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
