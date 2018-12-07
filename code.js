@@ -1,1 +1,1 @@
-// JavaScript code goes here
+var s = skrollr.init();
