@@ -1,1 +1,21 @@
-<!-- HTML & HubL code goes here -->
+{%- set pos_class = "" -%}
+{%- if position_content =="centered" -%}
+  {%- set pos_class = "v-center h-center" -%}
+{%- elif position_content =="top-left" -%}
+  {%- set pos_class = "" -%}
+{%- elif position_content =="center-left" -%}
+  {%- set pos_class = "v-center" -%}
+{%- elif position_content =="top-center" -%}
+  {%- set pos_class = "h-center" -%}
+{%- elif position_content =="custom" -%}
+  {%- set pos_class = module.custom_positioning_class -%}
+{%- endif -%}
+<div class="parallax-module-wrapper" data-content-position="{{position_content}}">
+  <div class="parallax-module" style="background-image: url({{ module.background.src }}); background-position: 50% 100%; " data-bottom-top="background-position: 50% 0%;" data-center="background-position: 50% 0%;" data-top-bottom="background-position: 50% 100%;"
+    >{#if you wish to style the content container style .parallax-module__content or add own class#}
+    <div class="parallax-module__content {{pos_class}}">
+     
+    </div>
+   </div>
+</div>
+{{require_js("https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js","head")}}
