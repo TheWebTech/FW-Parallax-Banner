@@ -1,0 +1,77 @@
+[ {
+  "id" : "",
+  "name" : "position_content",
+  "label" : "Position Content",
+  "sortable" : false,
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "hierarchical" : false,
+  "max_depth" : 0,
+  "choices" : [ [ "centered", "Centered" ], [ "top-left", "Top Left" ], [ "top-center", "Top Center" ], [ "center-left", "Centered Left" ], [ "custom", "custom" ] ],
+  "type" : "choice",
+  "default" : "centered"
+}, {
+  "id" : "",
+  "name" : "background",
+  "label" : "Background",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "hierarchical" : false,
+  "max_depth" : 0,
+  "resizable" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/1641088/New_Deliveries_Files/32246-HeroImg.jpeg",
+    "alt" : "32246-HeroImg",
+    "width" : 1282,
+    "height" : 922
+  }
+}, {
+  "id" : "",
+  "name" : "custom_positioning_class",
+  "label" : "Custom Positioning Class(optional)",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "feecae7b-9340-ce4a-82ab-932ef9dd5cea",
+    "controlling_value_regex" : "custom",
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "hierarchical" : false,
+  "max_depth" : 0,
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : null
+}, {
+  "id" : "",
+  "name" : "parallax_style",
+  "label" : "Parallax Style",
+  "help_text" : "Note - horizontal requires a very wide image to be noticeable on Desktop.",
+  "sortable" : false,
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "hierarchical" : false,
+  "max_depth" : 0,
+  "choices" : [ [ "vertical", "vertical" ], [ "L2R", "left to right" ], [ "R2L", "right to left" ], [ "fixed", "Fixed position" ] ],
+  "type" : "choice",
+  "default" : "fixed"
+}, {
+  "id" : "",
+  "name" : "banner_text",
+  "label" : "Banner Text",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "hierarchical" : false,
+  "max_depth" : 0,
+  "type" : "richtext",
+  "default" : ""
+}]
